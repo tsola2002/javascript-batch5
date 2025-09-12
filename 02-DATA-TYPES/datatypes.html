@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes</title>
+    <script>
+        // CREATING A STRING
+        let myName = 'Omatsola';
+        let activity = 'Do you want to learn javascript? "Yes!"';
+        
+        // CREATING A NUMBER
+        const fifty = 50;
+        let decNr = 1.5;
+        let expNr = 1.4e15;
+        // this is an octal
+        let octNr = 0o10;
+        // this is a hexadecimal
+        let hexNr = 0x3E8;
+        // this is a binary number
+        let binNr = 0b101;
+
+        // CREATING A BOOLEAN
+        const  positive = false;
+
+        console.log(octNr);
+        console.log(decNr);
+        console.log(expNr);
+        console.log(typeof(decNr));
+
+        // USING A STRING LITERAL TO DISPLAY A VARIABLE FROM INSIDE A STRING
+        console.log(`Do you want to learn javascript ${myName}`);
+
+        // USING AN ESCAPE SEQUENCE TO ESCAPE SPECIAL CHARACTERS
+        console.log("my name is \"shola\", your name is \'favour\'. our names combined are \`shola favour\`");
+
+        console.log(activity);
+        console.log(myName);
+        console.log(typeof(myName));
+        console.log(fifty);
+        console.log(typeof(fifty));
+        console.log(positive);
+        console.log(typeof(positive));
+
+        let str1 = "JavaScript is fun!";
+        let str2 = "JavaScript is fun!";
+        console.log("These two strings are the same:", str1 === str2);
+    </script>
+</head>
+<body>
+    <h1>Working With Datatypes</h1>
+</body>
+</html>
