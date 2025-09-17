@@ -45,6 +45,33 @@
         let str1 = "JavaScript is fun!";
         let str2 = "JavaScript is fun!";
         console.log("These two strings are the same:", str1 === str2);
+
+        // CREATING A SYMBOL
+        let sym1 = Symbol("JavaScript is fun!");
+        let sym2 = Symbol("JavaScript is fun!");
+        console.log(typeof(sym1));
+        console.log(typeof(sym2));
+        console.log("These two Symbols are the same:", sym1 === sym2);
+
+        // CREATING UNDEFINED DATATYPE
+        let d1;
+        console.log(d1);
+        let d2 = undefined;
+        console.log(d2);
+
+        console.log("undefined comparison", d1 === d2);
+
+
+        // CREATING NULL DATATYPE
+        let youKnowYouKnowNothing = null;
+        console.log(typeof(youKnowYouKnowNothing));
+        console.log(youKnowYouKnowNothing);
+        console.log("undefined vs null", d2 === youKnowYouKnowNothing);
+
+        // CREATING BIGINT DATATYPE
+        let bigNr = 9000765433218985546n;
+        console.log(typeof(bigNr));
+        console.log(bigNr);
     </script>
 </head>
 <body>

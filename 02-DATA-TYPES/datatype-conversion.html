@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatype Conversion</title>
+    <script>
+        
+        let year = "2025";
+        console.log(typeof(year));
+        
+        // CONVERTING A STRING TO A NUMBER
+        let convertedYear = Number(year);
+        console.log(typeof(convertedYear));
+        console.log(convertedYear);
+
+        // CONVERTING A NUMBER TO A STRING
+        let fraud = 419;
+        let convertedFraud = String(fraud);
+        console.log(typeof(convertedFraud), convertedFraud);
+
+        // CONVERTING STRING TO A BOOLEAN
+        let regularString = "This is a regular String";
+        let convertedBoolean = Boolean(regularString);
+        console.log(convertedBoolean);
+
+        let regularString1 = "";
+        let convertedBoolean1 = Boolean(regularString1);
+        console.log(convertedBoolean1);
+
+        let falseValue = "false";
+        let convertedFalseValue = Boolean(falseValue);
+        console.log(convertedFalseValue);
+
+        // CONVERTING NULL TO A NUMBER
+        let nullNr = null;
+        let nullToNr = Number(nullNr);
+        console.log("CONVERTED VALUE: ", typeof(nullToNr));
+        console.log(nullToNr);
+
+        
+    </script>
+</head>
+<body>
+    <h1>Datatype Conversion</h1>
+</body>
+</html>
