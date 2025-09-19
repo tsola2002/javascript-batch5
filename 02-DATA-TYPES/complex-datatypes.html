@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <script>
+        // CREATING AN ARRAY 
+        
+        // USING BUILT-IN ARRAY
+        let maleStudentList = new Array("Joshua", "Reynard", "Ephraim");
+        console.log(maleStudentList);
+
+        // USING LITERAL ARRAY
+        let femaleStudentList = ["Favour", "Amara", "Juliet"];
+        console.log(femaleStudentList);
+
+        let random = ["Favour", 1, true];
+        console.log(random);
+        console.log(typeof(random));
+
+        console.log(maleStudentList[0]);
+        console.log("male students data type: ",typeof(maleStudentList));
+        console.log(femaleStudentList[2]);
+
+
+        // UPDATING ITEMS OF THE ARRAY
+        maleStudentList[0] = "Ebube";
+        console.log(maleStudentList);
+
+        // ARRAY PROPERTIES
+        // LENGTH PROPERTY
+        console.log(maleStudentList.length);
+
+
+        // ARRAY METHODS
+        maleStudentList.push("Richie", "Micheal");
+        console.log(maleStudentList);
+
+        // SORT METHOD
+        let ages = [18, 72, 33, 56, 40];
+        console.log(ages.sort());
+
+        console.log(maleStudentList.toReversed());
+        
+
+
+    </script>
+</head>
+<body>
+    <h1>Working With Arrays</h1>
+</body>
+</html>
