@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+    <script>
+        let dog = {
+            dogName : "Snoop Dogg",
+            weight: 2.4,
+            color: "black",
+            breed: "Dubberman",
+            age: 45
+        };
+
+        // ACCESS ALL VALUES OF OUR OBJECT
+        //console.log(dog);
+
+        // ACCESS A SINGLE KEY IN OUR OBJECT
+        // console.log(dog.dogName);
+        // console.log(dog.age);
+
+        let mass = "weight";
+        // console.log(dog[mass]);
+        console.log(dog.weight);
+
+        // UPDATING VALUES IN OUR OBJECT
+        //dog["dogName"] = "Snoop Lion";
+        dog.dogName = "Snoop Lion";
+        console.log(dog);
+
+        // CREATING OBJECT INSIDE OBJECTS 
+        let company = {
+            companyName: "NIIT",
+            activity: "Educational Services",
+            address: {
+                houseNumber: 119,
+                streetName: "Ikota Expressway",
+                area: "Ajah",
+                state: "Lagos"
+                
+            },
+            yearEstablished: 2006
+        };
+        console.log(company.address.houseNumber);
+
+        // CREATING ARRAY INSIDE AN OBJECT 
+        let company2 = {
+            companyName: "NIIT",
+            subjects: ["HTML", "CSS", "JAVASCRIPT"],
+            address: {
+                houseNumber: 119,
+                streetName: "Ikota Expressway",
+                area: "Ajah",
+                state: "Lagos"
+                
+            },
+            yearEstablished: 2006
+        };
+        console.log(company2.subjects[2]);
+
+
+        let company3 = {
+            companyName: "NIIT",
+            subjects: ["HTML", "CSS", "JAVASCRIPT", ],
+            address: {
+                houseNumber: 119,
+                streetName: "Ikota Expressway",
+                area: "Ajah",
+                state: "Lagos",
+                Region: {
+                    name: " West Africa",
+                    countryCodes: [101, 202, 215],
+                    zipCodes: {
+                        stateCode: 404,
+                        lgaCode: {
+                            streetCodes: [11, 22, 33, 44, 55],
+                            miniRegionCode: {
+                                lekki: [0,1,2],
+                                ajah: [3,4,5]
+                            }
+                        }
+                    }
+                }
+            },
+            yearEstablished: 2006
+        };
+
+    </script>
+</head>
+<body>
+    <h1>Working With Objects</h1>
+</body>
+</html>

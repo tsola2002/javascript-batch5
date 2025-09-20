@@ -9,41 +9,48 @@
         
         // USING BUILT-IN ARRAY
         let maleStudentList = new Array("Joshua", "Reynard", "Ephraim");
-        console.log(maleStudentList);
+        // console.log(maleStudentList);
 
         // USING LITERAL ARRAY
         let femaleStudentList = ["Favour", "Amara", "Juliet"];
-        console.log(femaleStudentList);
+        // console.log(femaleStudentList);
 
         let random = ["Favour", 1, true];
-        console.log(random);
-        console.log(typeof(random));
+        // console.log(random);
+        // console.log(typeof(random));
 
-        console.log(maleStudentList[0]);
-        console.log("male students data type: ",typeof(maleStudentList));
-        console.log(femaleStudentList[2]);
+        // console.log(maleStudentList[0]);
+        // console.log("male students data type: ",typeof(maleStudentList));
+        // // console.log(femaleStudentList[2]);
 
 
         // UPDATING ITEMS OF THE ARRAY
         maleStudentList[0] = "Ebube";
-        console.log(maleStudentList);
+        // console.log(maleStudentList);
 
         // ARRAY PROPERTIES
         // LENGTH PROPERTY
-        console.log(maleStudentList.length);
+        // console.log(maleStudentList.length);
 
 
         // ARRAY METHODS
         maleStudentList.push("Richie", "Micheal");
-        console.log(maleStudentList);
+        // console.log(maleStudentList);
 
         // SORT METHOD
         let ages = [18, 72, 33, 56, 40];
-        console.log(ages.sort());
+        // console.log(ages.sort());
 
-        console.log(maleStudentList.toReversed());
-        
+        // console.log(maleStudentList.toReversed());
 
+        // DELETE AN ITEM FROM THE ARRAY
+        ages.pop([3]);
+        // console.log(ages);
+
+        // FIND AN ITEM IN OUR ARRAY
+        let search = ages.find(e => e === 18);
+
+        console.log(search);
 
     </script>
 </head>
