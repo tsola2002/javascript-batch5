@@ -10,6 +10,7 @@
         let nr2 = 14;
         let nr3 = 2;
         let nr4 = 3;
+        let nr5 = 3;
         // ADDITION
         let result1 = nr1 + nr2;
         // SUBTRACTION
@@ -30,6 +31,82 @@
         console.log("2 Raised to power 3 is: ", result5);
         console.log("14 modulus 3 is : ", result6);
 
+        // UNARY OPERATORS
+        // POST INCREMENT OPERATORS 
+        //nr4++;
+        console.log("post increment of 3 is: ", nr4++);
+
+        // PRE INCREMENT OPERATOR
+        console.log("pre increment of 3 is: ", ++nr5);
+
+
+        // ASSIGNMENT OPERATORS
+        let nr6 = 3
+        let result7 = nr6 +=2;
+        console.log(result7);
+
+        let nr7 = 10
+        let result8 = nr7 -=1;
+        console.log(result8);
+
+
+        // COMPARISON OPERATORS
+        let x = 5;
+        let y = "5";
+        let z = 5;
+        let a = 4;
+        // loose equality operator
+        console.log(x == y);
+        // strict equality operator
+        console.log(x === y);
+
+        // not equals operator
+        console.log(x != z);
+        console.log(x != a); // !== is a loose equality operator which will invert the result
+
+        console.log(x !== y); // !== is a strict equality operator which will invert the result
+        
+        // Greater Than Operator
+        console.log(x > a);
+        console.log(a > x);
+
+        // Greater Equals to Operator
+        console.log( x >= z);
+        console.log( z >= x);
+
+        // Less Than Operator
+        console.log(x < a);
+        console.log(a < x);
+
+        // Less Than Equals to Operator
+        console.log( x <= z);
+        console.log( z <= x);
+
+        // LOGICAL OPERATORS
+        let e = "5";
+        let f = 5;
+        let g = 6;
+        let h = 6;
+
+        // LOGICAL AND OPERATOR
+        console.log((g == h) && (e == f));
+        console.log((g == h) && (e == g));         
+        console.log((g == h) && (e === g)); 
+
+        // LOGICAL OR OPERATOR
+        console.log((g == h) || (e === g));
+        console.log((e === g) || (e === g));
+        console.log((e === g) || (e === g) || (e == f));
+
+        let j = false;
+        let i = true
+
+        // NOT OPERATOR
+        console.log(!j);
+        console.log(!i);
+
+        console.log(!((e === g) || (e === g) || (e == f)));
+        console.log(!((g == h) && (e === g)));
 
     </script>
 </head>
