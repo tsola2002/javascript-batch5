@@ -33,16 +33,78 @@
        // console.log(arr);
 
        // NESTED LOOPS 
-       let arrOfArrays = [];
-       for(let i = 0; i < 3; i++){
-            arrOfArrays.push([]);
-            for(let j = 0; j < 7; j++){
-                arrOfArrays[i].push(j);
-            }
-       }
+    //    let arrOfArrays = [];
+    //    for(let i = 0; i < 3; i++){
+    //         arrOfArrays.push([]);
+    //         for(let j = 0; j < 7; j++){
+    //             arrOfArrays[i].push(j);
+    //         }
+    //    }
 
-       console.log(arrOfArrays);
+    //    console.log(arrOfArrays);
 
+
+    // FOR OF LOOP
+    let names = ["Favour", "Jude", "Ephraim", "Reynard"];
+
+    let multiNumber = [
+            [1,2,3],
+            [4,5,6], 
+            [7,8,9]
+        ];
+    // looping through an array
+    // for(name of names){
+    //     console.log(name);
+    // }
+    // looping through multidimensional array
+    // for(name of multiNumber){
+    //     console.log(name);
+    // }
+
+    // FOR IN LOOPS
+    let car = {
+        model: "G-Wagon",
+        make: "Benz",
+        year: "2026",
+        color: "Black"
+    };
+
+    // this will display all the keys
+    // for(let prop in car){
+    //     console.log(prop);
+    // }
+    // this will display all the values
+    // for(let prop in car){
+    //     console.log(car[prop]);
+    // }
+    // this will display all the keys-value pairs
+    // for(let prop in car){
+    //     console.log(`${prop} : ${car[prop]}`);
+    // }
+
+    // CONVERT OBJECT TO ARRAY VIA KEYS
+    // let convertedCarKeys = Object.keys(car);
+    // console.log(convertedCarKeys);
+
+    // for(let key of Object.keys(car)){
+    //     console.log(key);
+    // }
+
+    // CONVERT OBJECT TO ARRAY VIA VALUES
+    // let convertedCarValues = Object.values(car);
+    // console.log(convertedCarValues);
+
+    // for(let key of Object.values(car)){
+    //     console.log(key);
+    // }
+
+    // CONVERT OBJECT TO ARRAY VIA KEY-VALUE PAIRS
+    // let convertedCarKeyValuePairs = Object.entries(car);
+    // console.log(convertedCarKeyValuePairs);
+
+    for(let [key, value] of Object.entries(car)){
+        console.log(key, ":" ,value);
+    }
 
     </script>
 </head>
