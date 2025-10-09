@@ -56,10 +56,17 @@
 
         // ANONYMOUS FUNCTIONS
         let sayHello = function(){
-            console.log("Hello!!!");
+            console.log("Say Hello!!!");
         }
-        sayHello();
+        //sayHello();
 
+        // CALLBACK FUNCTION
+        function callback(sayHello){
+            console.log("calling our callback function");
+            sayHello();
+        }
+
+        callback(sayHello);
     </script>
 </head>
 <body>
