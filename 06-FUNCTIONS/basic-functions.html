@@ -58,7 +58,7 @@
         let sayHello = function(){
             console.log("Say Hello!!!");
         }
-        //sayHello();
+        // sayHello();
 
         // CALLBACK FUNCTION
         function callback(sayHello){
@@ -66,7 +66,49 @@
             sayHello();
         }
 
-        callback(sayHello);
+       // callback(sayHello);
+
+       // SET TIMEOUT FUNCTION 
+       // setTimeout(sayHello, 5000); 
+
+       // SET INTERVAL FUNCTION
+       // setInterval(sayHello, 5000);
+
+
+       // IMMEDIATELY INVOKED FUNCTION EXPRESSION
+    //    (function(){
+    //     console.log("Hiiii!!!");
+    //    })();
+
+     //  (() => console.log("Hiiii!!!"))();
+
+      // LOCAL SCOPE
+
+      function testAvailability(){
+        let y = "y is here!!";
+        //console.log(x);
+        //console.log(y);
+       return y;
+      }
+
+      let z = testAvailability();
+      //console.log(z);
+      //console.log(y);
+      // testAvailability("Hi");
+      //console.log(x);
+      //console.log(y);
+      //testAvailability();
+
+
+      //LET VS VAR SCOPE
+      function doingStuff(){
+        if(true){
+            //var x = "local";
+            let x = "local";
+        }
+        console.log(x);
+      }
+      doingStuff();
     </script>
 </head>
 <body>
