@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <script>
+        // CREATE A FUNCTION 
+        function greetMe(){
+            let you = prompt("What is Your Name?");
+            console.log("Good Morning", you);
+        }
+        // CALLING THE FUNCTION
+        //greetMe();
+
+        // CREATING FUNCTIONS THAT USE PARAMETERS
+        // function add(x, y){
+        //     console.log(x + y);
+        // }
+        // add(10, 20);
+
+        // DEFAULT PARAMETERS
+        function add(x = 2, y = 3) {
+            console.log(x + y);
+        }
+        //add();
+        //add(6);
+        //add(4);
+
+       // ARROW FUNCTIONS
+        // function sayHi(){
+        //     console.log("Hi");
+        // }
+        // sayHi();
+
+        let sayHi = () => console.log("Hi");
+        //sayHi();
+
+        //let addNumber = (x, y) => console.log(x + y);
+       // addNumber(10, 20);
+
+
+        // SPREAD OPERATOR
+        let spread = ["so", "much" , "fun"];
+        let message = ["Javascript", "is", ...spread, "and", "powerful"];
+        //console.log(message);
+        function addFour(a, b, c, d){
+            return a + b + c + d;
+        }
+        let arr = [1, 2, 3, 4];     
+        //addFour(...arr);
+
+        let result = addFour(5, 6, 7, 8);
+        //console.log(result);
+
+
+        // ANONYMOUS FUNCTIONS
+        let sayHello = function(){
+            console.log("Hello!!!");
+        }
+        sayHello();
+
+    </script>
+</head>
+<body>
+    <h1>Working With Functions</h1>
+</body>
+</html>
