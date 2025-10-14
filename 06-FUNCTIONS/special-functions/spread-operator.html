@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // SPREAD OPERATOR
+        let favour = ["so", "much" , "fun"];
+        let message = ["Javascript", "is", "and", "powerful", ...favour];
+
+        console.log(message);
+
+        function addFour(a, b, c, d){
+            return a + b + c + d;
+        }
+
+        let arr2 = [3, 4];
+        let arr = [1, 2, 3, 4];     
+        console.log(addFour(3, 4, ...arr2));
+
+
+        // RETURN KEYWORD 
+        // let result = addFour(5, 6, 7, 8);
+        //console.log(result);
+
+
+        // ANONYMOUS FUNCTIONS
+        // let sayHello = function(){
+        //     console.log("Say Hello!!!");
+        // }
+        // sayHello();
+
+        // CALLBACK FUNCTION
+        // function callback(sayHello){
+        //     console.log("calling our callback function");
+        //     sayHello();
+        // }
+
+        // callback(sayHello);
+
+        // SET TIMEOUT FUNCTION 
+        // setTimeout(sayHello, 5000); 
+
+        // SET INTERVAL FUNCTION
+        // setInterval(sayHello, 5000);
+
+
+        // IMMEDIATELY INVOKED FUNCTION EXPRESSION
+        //    (function(){
+        //     console.log("Hiiii!!!");
+       //    })();
+
+     //  (() => console.log("Hiiii!!!"))();
+
+      // LOCAL SCOPE
+
+    //   function testAvailability(){
+    //     let y = "y is here!!";
+    //     //console.log(x);
+    //     //console.log(y);
+    //    return y;
+    //   }
+
+    //   let z = testAvailability();
+      //console.log(z);
+      //console.log(y);
+      // testAvailability("Hi");
+      //console.log(x);
+      //console.log(y);
+      //testAvailability();
+
+
+      //LET VS VAR SCOPE
+    //   function doingStuff(){
+    //     if(true){
+    //         //var x = "local";
+    //         let x = "local";
+    //     }
+    //     console.log(x);
+    //   }
+    //   doingStuff();
+    </script>
+</head>
+<body>
+    <h1>Working With Spread Operator</h1>
+</body>
+</html>
