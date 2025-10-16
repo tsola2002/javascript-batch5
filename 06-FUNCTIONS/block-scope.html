@@ -27,6 +27,17 @@
         doingStuff2();
 
 
+        function doingStuff3() {
+
+            if (true) {
+                const x = "local"; 
+            }
+            console.log(x); // NOT ACCESSIBLE BECAUSE ITS OUTSIDE THE BLOCK SCOPE{} IN WHICH IT WAS DEFINED(CONST)
+        }
+            
+        doingStuff3();
+
+
 
     </script>
 </head>
