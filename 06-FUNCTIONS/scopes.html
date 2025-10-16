@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // USING LOCAL SCOPE
+        function testAvailability(x) {   
+            console.log("Available here: ", x);
+            let y = "i'll return";
+            console.log("Another variable", y);
+            return y;
+        }
+
+        let z = testAvailability();
+        //console.log(z);
+        console.log(y); // OUT OF LOCAL SCOPE
+
+        //testAvailability("Shola"); // LOCAL SCOPE
+        //console.log(x); // OUT OF LOCAL SCOPE
+
+
+
+
+
+    </script>
+</head>
+<body>
+    <h1>Working With Scopes</h1>
+</body>
+</html>
