@@ -13,18 +13,15 @@
         // getRecursive(3);
 
 
-        // function getRecursive(nr) {
-        // console.log(nr);
-        //     if (nr > 0) {
-        //         getRecursive(--nr); // CALLING A FUNCTION FROM INSIDE A FUNCTION
-        //     }
-        // }
-        // getRecursive(3);
-
-        function reynard(){
-            console.log("Hi Reynard");
-            reynard(); // CALLING A FUNCTION FROM INSIDE A FUNCTION
+        function getRecursive(nr) {
+        console.log(nr);
+            if (nr > 0) {
+                getRecursive(--nr); // CALLING A FUNCTION FROM INSIDE A FUNCTION
+            }
         }
+        getRecursive(3);
+
+        
     </script>
 </head>
 <body>
