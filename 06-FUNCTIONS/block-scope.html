@@ -5,14 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        //1 LET VS VAR
+        // ACCESSING A VARIABLE USING FUNCTION SCOPE
         function doingStuff() {
             if (true) {
                 var x = "local";
             }
-            console.log(x);
+            console.log(x); // ACCESSIBLE BECAUSE ITS INSIDE THE FUNCTION SCOPE IN WHICH X WAS DEFINED
         }
             
         doingStuff();
+
+        function doingStuff2() {
+
+            if (true) {
+                let x = "local"; 
+            }
+            console.log(x); // NOT ACCESSIBLE BECAUSE ITS OUTSIDE THE BLOCK SCOPE{} IN WHICH IT WAS DEFINED(LET)
+        }
+            
+        doingStuff2();
+
+
+
     </script>
 </head>
 <body>
