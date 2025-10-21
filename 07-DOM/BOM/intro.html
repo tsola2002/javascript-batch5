@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    
+    
+</head>
+<body>
+    <h1>Introduction To DOM</h1>
+    <div class="output">text1</div>
+    <div class="output">text2</div>
+    <div class="output">text3</div>
+    <div class="output">text4</div>
+    <script>
+        // ACCESSING THE BROWSER OBJECT MODEL
+        // console.dir(window);
+
+        // ACCESS THE BACK BUTTON WITH HISTORY OBJECT
+        // history.go(-4);
+
+
+        // let element = document.querySelector("h1");
+        //console.dir(element);
+
+        // SELECTING MULTIPLE ELEMENTS USING THE DOM
+        let elements = document.querySelectorAll(".output");
+        console.dir(elements);
+        
+    </script>
+</body>
+</html>
