@@ -8,12 +8,21 @@
 <body>
     <h1 id="access">Accessing Dom Element</h1>
     <h1 id="secondaccess">Second Access content</h1>
+    <h2 class="class1">First Class</h2>
+    <h3 class="class1">Second Class</h3>
     <script>
         // ACCESSING DOM ELEMENTS VIA THE ID       
         console.dir(document.getElementById("access"));
 
         // ACCESSING DOM ELEMENTS VIA THE TAGNAME
         console.dir(document.getElementsByTagName("h1"));
+
+        // ACCESSING DOM ELEMENTS VIA THE CLASS NAME
+        console.dir(document.getElementsByClassName("class1"));
+
+        // ACCESSING DOM ELEMENTS VIA THE QUERY SELECTOR
+        console.dir(document.querySelector("#access"));
+        console.dir(document.querySelectorAll(".class1"));
     </script>
 </body>
 </html>
