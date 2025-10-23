@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Changing Element With Javascript</h1>
+    <p id="magic">I will disappear and appear</p>
+    <button onclick="toggleDisplay()">Magic</button>
+    <script>
+         console.dir(document.getElementById("magic"));
+
+        function toggleDisplay(){
+            // SELECT PARAGRAPH TAG ID
+            let p = document.getElementById("magic");
+
+            if(p.style.display === "none"){
+                // MAKE THE ELEMENT VISIBLE
+                p.style.display = "block";
+                p.style.backgroundColor = "red"
+            } else {
+                // MAKE THE ELEMENT INVISIBLE
+                p.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
