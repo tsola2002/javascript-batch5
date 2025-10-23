@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .square{
+            height: 100px;
+            width: 100px;
+            background-color: yellow;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .circle{
+            border-radius: 50%;
+            height: 100px;
+            width: 100px;
+        }
+        .hide{ display: none; }
+    </style>
+</head>
+<body>
+    <h1>Adding Class Name Through Javascript</h1>
+    <div id="shape" class="square blue"></div>
+    <button onclick="addBorder()">Trigger</button>
+    <button onclick="removeShape()">Remove Shape</button>
+    <script>
+        function removeShape(){
+            let el = document.getElementById("shape");
+            el.removeAttribute("class");
+        }
+
+        function addBorder(){
+           let el = document.getElementById("shape");
+           el.setAttribute("style", "border: 2px solid red");
+        }      
+    </script>
+</body>
+</html>
