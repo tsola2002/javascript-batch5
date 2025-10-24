@@ -10,7 +10,13 @@
 
     <script>
         window.onload = function doneNow(){
-            document.getElementById("shape").addEventListener("mousedown", function() { })
+            document.getElementById("shape").addEventListener("mousedown", function() { changeColor(this, "green"); });
+
+            document.getElementById("shape").addEventListener("mouseup", function() { changeColor(this, "yellow"); });
+
+            document.getElementById("shape").addEventListener("dblclick", function() { changeColor(this, "black"); });
+
+            document.getElementById("shape").addEventListener("mouseout", function() { changeColor(this, "blue"); });
         }
 
         function changeColor(el, color){
