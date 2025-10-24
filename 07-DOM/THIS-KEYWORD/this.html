@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keyword</title>
+</head>
+<body>
+    <h1>Working With THIS Keyword</h1>
+
+    <!-- this keyword indicates the context is the button element -->
+    <button onclick="reveal(this)">Click Here</button>
+
+    <script>
+        function reveal(el){
+            // this will log button because this keyword was created in the context of button element
+            console.log(el);
+        }
+    </script>
+</body>
+</html>
