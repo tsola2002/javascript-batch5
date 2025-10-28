@@ -11,7 +11,7 @@
     <form action="" method="get">
         <input  type="text" onchange="logEvent()" name="firstname" placeholder="First Name" id="">
         <input  type="text" onblur="logEvent()" name="lastname" placeholder="Last Name" id="">
-        <input type="button" onclick="changeInfo()" value="Submit">
+        <input type="button" onclick="logEvent()" value="Submit">
     </form>
     <div id="welcome">Hi There</div>
     <script>
@@ -29,7 +29,7 @@
 
         function changeInfo(){
             //ACCESSING THE EVENT PROPERTY
-            //console.dir(event);
+            console.dir(event);
         }
         
     </script>
