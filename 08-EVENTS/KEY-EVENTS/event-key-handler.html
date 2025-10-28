@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Working With Key Events</h1>
+
+    <input type="text" name="num1" onkeypress="numcheck()">
+    <input type="text" name="num2" onkeypress="numcheck2()">
+    <div id="welcome">Javascript is Fun</div>
+    <script>
+        function numcheck(){
+            message("Number: " + !isNaN(event.key));
+            return !isNaN(event.key);
+        }
+        function numcheck2(){
+            message("Number: " + isNaN(event.key));
+            return isNaN(event.key);
+        }
+        function message(m){
+            document.getElementById("welcome").innerText = m;
+        }
+    </script>
+</body>
+</html>
