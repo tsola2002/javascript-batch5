@@ -12,29 +12,35 @@
     <p id="hi"></p>
 
     <script>
+        // set cookie function takes in event variable
         function setCookie(e) {
+            // CREATING A COOKIE USING THE VALUE FROM THE INPUT TAG
             document.cookie = "name=" + e.value + ";";
         }
 
         function sayHi(key) {
+            // CALLING A FUNCTION THAT WILL TAKE IN (KEY) = NAME
             let name = getCookie(key);
             document.getElementById("hi").innerHTML = "Hi " + name;
         }
 
         function getCookie(key) {
-            let cookie = decodeURIComponent(document.cookie);
-            let cookieList = cookie.split(";");
-            for (let i = 0; i < cookieList.length; i++) {
-            let c = cookieList[i];
-            if (c.charAt(0) == " ") {
-                c = c.trim();
-            }
-            if (c.startsWith(key)) {
-                console.log("hi" + c);
-                return c.substring(key.length + 1, c.length);
-            }
-            }
+        let cookie = decodeURIComponent(document.cookie);
+        // THIS WILL BREAK THE COOKIE DOWN TO AN ARRAY BITS
+        let cookieList = cookie.split(";");
+        for (let i = 0; i < cookieList.length; i++) {
+        // THIS WILL LOOP THROUGH THE ARRAY AND GET RID OF ANY WHITESPACE
+          let c = cookieList[i];
+          if (c.charAt(0) == " ") {
+            c = c.trim();
+          }
+          if (c.startsWith(key)) {
+            // THIS WILL DISPLAY HI FAVOUR
+            console.log("hi" + c);
+            return c.substring(key.length + 1, c.length);
+          }
         }
+      }
     </script>
 </body>
 </html>
