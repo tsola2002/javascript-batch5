@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Local Storage</title>
+    
+</head>
+<body>
+    <h1>Working With Local Storage</h1>
+    <div id="stored">
+    </div>
+
     <script>
         let message =  "My New Local Storage Item";
         let message2 =  "My Second Local Storage Item";
@@ -11,11 +18,23 @@
         // SAVING THE STRING VIA LOCAL STORAGE
         localStorage.setItem("key1", message);
         localStorage.setItem("key2", message2);
+
+        if(localStorage.getItem("key1") && localStorage.getItem("key2")){
+            // DELETE ALL ITEMS FROM LOCAL STORAGE
+
+
+            // DELETE AN ITEM FROM LOCAL STORAGE
+            // localStorage.removeItem("key2");
+
+
+            // THIS WILL DISPLAY THE VALUES 
+            document.getElementById("stored").innerText =
+            localStorage.getItem("key1") + " " + localStorage.getItem("key2");
+
+            // THIS WILL DISPLAY THE KEYS ALONE
+            // document.getElementById("stored").innerText =
+            // localStorage.key(0) + " " + localStorage.key(1);
+        }
     </script>
-</head>
-<body>
-    <h1>Working With Local Storage</h1>
-    <div id="stored">
-    </div>
 </body>
 </html>
