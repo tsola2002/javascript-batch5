@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+    <script>
+        // CREATING A JAVASCRIPT STRING OBJECT
+        let str = '{"name": "maaike", "age": 30}';
+        console.log("JAVASCRIPT STRING OBJECT", str, typeof(str));
+        //CONVERTING THE OBJECT INTO JSON FORMAT
+        let obj = JSON.parse(str);
+        console.log("JSON OBJECT", obj, typeof(obj));
+
+
+        let dog = {
+            "name": "snoop",
+            "breed": "alsasian"
+        };
+
+        let strDog = JSON.stringify(dog);
+        console.log("JSON OBJECT", dog, typeof(dog));
+        console.log("STRING OBJECT", strDog, typeof(strDog));
+
+    </script>
+</head>
+<body>
+    <h1>Working With JSON Data</h1>
+</body>
+</html>
