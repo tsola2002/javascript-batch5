@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async-await</title>
+</head>
+<body>
+    <h1>Using ASYNC/AWAIT</h1>
+
+    
+    <script>
+        //CREATE A SYNCHRONOUS FUNCTION
+        function greet1(){ return "Hello There!!"; }
+
+        //CREATE AN ASYNCHRONOUS FUNCTION
+        async function greet2(){ return "Hello There!!"; }
+
+        console.log(greet1());
+        console.log(greet2());
+
+        // HANDLING THE  PROMISE THAT WAS RETURNED FROM THE ASYNCHRONOUS FUNCTION
+        greet2().then((msg) => console.log(msg));
+
+        
+
+    </script>
+</body>
+</html>
