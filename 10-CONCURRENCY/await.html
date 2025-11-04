@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Await</title>
+</head>
+<body>
+    <h1>USING AWAIT KEYWORD</h1>
+
+    <script>
+
+        function fetchData(){
+            // RETURN A NEW PROMISE
+            return new Promise((resolve) => {
+                setTimeout(() => {
+                    resolve("Data fetched Successfully!!");
+                }, 5000)
+            });
+        }
+
+        async function getData(){
+            console.log("Fetching......");
+            const result = await fetchData();
+            console.log(result);
+            console.log("Done");
+        }
+
+        getData();
+    </script>
+</body>
+</html>
