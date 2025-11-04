@@ -28,8 +28,23 @@
             }
     );
 
+    const myPromise = new Promise((resolve, reject) => {
+        const success = false; // simulate successful operation
 
-    
+        if(success){
+            resolve("Operation was successful");
+        } else{
+            reject("Something Went wrong");
+        }
+    });
+
+    // HANDLING THE RESULT OF THE PROMISE
+    myPromise
+    .then((message) => console.log("Success", message))
+    .catch((error) => console.log("Error", error))
+    .finally(() => console.log("Promise has been settled. Youre Done"));
+
+
     </script>
 </body>
 </html>
