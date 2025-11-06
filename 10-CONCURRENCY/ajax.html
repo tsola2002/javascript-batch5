@@ -22,6 +22,8 @@
     <h1>Working With Ajax</h1>
     <div id="countryContainer">
     </div>
+
+   
     <script>
         // CREATING OUR XMLHTTPREQUEST OBJECT
         let request = new XMLHttpRequest();
@@ -45,8 +47,26 @@
            const language = Object.values(data.language)[0];
            const currency = Object.values(data.currencies)[0].name;
 
-           
+           let html =  `
+            <article class="country">
+            <img class="countryImage" src="${flag}" alt="" >
+            <div class="countryData">
+                <h3 class="countryName">${name}</h3>
+                <h4 class="countryRegion">${region}</h4>
+                <p class="countryRow"><span>👨‍🔬</span>${population}</p>
+                <p class="countryRow"><span>🗣</span>${language}</p>
+                <p class="countryRow"><span>💲</span>${currency}</p>
+            </div>
+            </article>
+            `;
+
+            let countryContainer = document.getElementById("countryContainer");
+            countryContainer.insertAdjacentHTML('beforeend', html);
+
         });
+
+
+        
     </script>
 </body>
 </html>
