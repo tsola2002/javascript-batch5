@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ajax</title>
     <style>
-        .country {
+        .country{
             max-width: 300px;
             border: 2px solid #ddd;
             border-radius: 8px;
@@ -15,14 +15,38 @@
         }
         .countryImage{ width: 100%; border-radius: 6px; }
         .countryData{ margin-top: 1em; }
-        .coutryRow { margin: 0.3rem 0; }
+        .countryRow { margin: 0.3rem 0; }
     </style>
 </head>
 <body>
     <h1>Working With Ajax</h1>
-
     <div id="countryContainer">
-
     </div>
+    <script>
+        // CREATING OUR XMLHTTPREQUEST OBJECT
+        let request = new XMLHttpRequest();
+
+        // OPEN THE REQUEST
+        request.open('GET', 'https://restcountries.com/v3.1/name/nigeria');
+
+        // SENDING OUR HTTP REQUEST
+        let data = request.send();
+
+        // REGISTER A CALLBACK ON REQUEST OBJECT FOR A LOAD EVENT
+        request.addEventListener('load', function(){
+            //console.log(this.responseText);
+           [data] = JSON.parse(this.responseText);
+           console.log(data);
+
+           const flag = data.flags.png;
+           const name = data.name.common;
+           const region = data.region;
+           const population = data.population;
+           const language = Object.values(data.language)[0];
+           const currency = Object.values(data.currencies)[0].name;
+
+           
+        });
+    </script>
 </body>
 </html>
